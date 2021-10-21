@@ -11,6 +11,7 @@ namespace BetterReports
     {
         public bool IsEnabled { get; set; } = true;
         public string BotToken { get; set; } = "";
+        public float HintDuration { get; set; } = 5f;
         public Messages Messages { get; set; } = new Messages();
         public BotConfig bot { get; set; } = new BotConfig();
     }

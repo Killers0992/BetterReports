@@ -66,7 +66,7 @@ namespace BetterReports
                         foreach (var plr in sv.Players)
                         {
                             if (plr.Value.RemoteAdminAccess)
-                                plr.Value.SendHint(messageAdmin, 5f);
+                                plr.Value.SendHint(messageAdmin, BetterReportsDedicated.singleton.Config.HintDuration);
                         }
                     }
                 }
@@ -109,7 +109,7 @@ namespace BetterReports
                         foreach (var plr in sv.Players)
                         {
                             if (plr.Value.RemoteAdminAccess)
-                                plr.Value.SendHint(messageAdmin, 5f);
+                                plr.Value.SendHint(messageAdmin, BetterReportsDedicated.singleton.Config.HintDuration);
                         }
                     }
                 }
@@ -161,7 +161,7 @@ namespace BetterReports
                                 foreach(var plr in sv.Players)
                                 {
                                     if (plr.Value.RemoteAdminAccess)
-                                        plr.Value.SendHint(outMessage, 5f);
+                                        plr.Value.SendHint(outMessage, BetterReportsDedicated.singleton.Config.HintDuration);
                                 }
                             }
                             var mod = new ReportModel()

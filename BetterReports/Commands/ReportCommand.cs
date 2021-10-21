@@ -149,7 +149,7 @@ namespace BetterReports.Commands
                                                 foreach (var plr in sv.Players)
                                                 {
                                                     if (plr.Value.RemoteAdminAccess)
-                                                        plr.Value.SendHint(messageAdmin, 5f);
+                                                        plr.Value.SendHint(messageAdmin, BetterReportsDedicated.singleton.Config.HintDuration);
                                                 }
                                             }
                                             player.SendRAMessage(BetterReportsDedicated.singleton.Config.Messages.report_declined
@@ -215,7 +215,7 @@ namespace BetterReports.Commands
                                                 foreach (var plr in sv.Players)
                                                 {
                                                     if (plr.Value.RemoteAdminAccess)
-                                                        plr.Value.SendHint(messageAdmin, 5f);
+                                                        plr.Value.SendHint(messageAdmin, BetterReportsDedicated.singleton.Config.HintDuration);
                                                 }
                                             }
                                             player.SendRAMessage(BetterReportsDedicated.singleton.Config.Messages.state_accepted
