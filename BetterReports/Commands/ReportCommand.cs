@@ -14,7 +14,7 @@ namespace BetterReports.Commands
 
         public string Description { get; } = "Command for management of server reports.";
 
-        public string Permission { get; } = "report";
+        public string Permission => BetterReportsDedicated.singleton.Config.ReportCmdPermission;
 
         public bool IsRaCommand { get; } = true;
 

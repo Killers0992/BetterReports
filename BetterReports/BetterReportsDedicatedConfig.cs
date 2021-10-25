@@ -10,10 +10,11 @@ namespace BetterReports
     public class BetterReportsDedicatedConfig : IConfig
     {
         public bool IsEnabled { get; set; } = true;
-        public string BotToken { get; set; } = "";
+        //public string BotToken { get; set; } = "";
+        public string ReportCmdPermission { get; set; } = "betterreports.report";
         public float HintDuration { get; set; } = 5f;
         public Messages Messages { get; set; } = new Messages();
-        public BotConfig bot { get; set; } = new BotConfig();
+        //public BotConfig bot { get; set; } = new BotConfig();
     }
 
     public class Messages
@@ -30,9 +31,8 @@ namespace BetterReports
         public string state_declined { get; set; } = "DECLINED";
         public string report_not_found { get; set; } = "Report not found with id <color=red>%report_id%</color>.";
         public string ticket_admin_onway { get; set; } = "[TicketSystem]\nAdministrator %admin_name% is connecting to server to investagiate.";
-        public string tickets_message { get; set; } = "Tickets:";
-        public string tickets_object { get; set; } = "ID: %id% | Time: %datetime% | Issuer: %issuer_nick% | Target: %target_nick% | Reason: %reason%";
-        public string no_permission { get; set; } = "No permission.";
+        //public string tickets_message { get; set; } = "Tickets:";
+        //public string tickets_object { get; set; } = "ID: %id% | Time: %datetime% | Issuer: %issuer_nick% | Target: %target_nick% | Reason: %reason%";
         public string new_ticket { get; set; } = "[TicketSystem]\nNew ticket %id%\nIssuer: %issuer_nick%\nTarget: %target_nick%\nReason: %reason%";
         public string ticket_accepted { get; set; } = "[TicketSystem]\nTicket %id% accepted by %issuer_nick%, Response:\n%response%";
         public string ticket_declined { get; set; } = "[TicketSystem]\nTicket %id% declined by %issuer_nick%, Response:\n%response%";
