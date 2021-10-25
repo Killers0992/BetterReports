@@ -155,7 +155,7 @@ namespace BetterReports
                                Replace("%reason%", message).
                                Replace("%server_ip%", server.ServerAddress).
                                Replace("%server_port%", server.ServerPort.ToString());
-
+                                                     
                             foreach(var sv in GetServers())
                             {
                                 foreach(var plr in sv.Players)

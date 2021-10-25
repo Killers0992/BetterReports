@@ -80,8 +80,8 @@ namespace BetterReports.Commands
                                                     .Replace("%server_ip%", srv.ServerAddress)
                                                     .Replace("%server_port%", $"{srv.ServerPort}"));
                                                 player.Redirect(srv.ServerPort);
+                                                return;
                                             }
-                                            break;
                                         }
                                         foreach (var srv in BetterReportsDedicated.singleton.GetServers())
                                         {
@@ -94,8 +94,8 @@ namespace BetterReports.Commands
                                                     .Replace("%server_ip%", srv.ServerAddress)
                                                     .Replace("%server_port%", $"{srv.ServerPort}"));
                                                 player.Redirect(srv.ServerPort);
+                                                return;
                                             }
-                                            break;
                                         }
                                         player.SendRAMessage(BetterReportsDedicated.singleton.Config.Messages.issued_player_not_found);
                                     }
